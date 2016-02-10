@@ -3,6 +3,8 @@
 
 @interface LSStubResponse : NSObject<LSHTTPResponse>
 
+@property (nonatomic, assign) NSInteger secondsDelay;
+
 @property (nonatomic, assign, readonly) NSInteger statusCode;
 @property (nonatomic, strong) NSData *body;
 @property (nonatomic, strong, readonly) NSDictionary *headers;

@@ -37,4 +37,12 @@
         return self;
     };
 }
+
+-(ResponseWithDelayMethod)withDelay {
+    return ^(NSInteger delay) {
+        self.response.secondsDelay = delay;
+        return self;
+    };
+}
+
 @end
